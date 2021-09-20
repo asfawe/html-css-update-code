@@ -1,0 +1,32 @@
+.page-header {
+  display: block;
+  padding: 1em;
+  background: lightgray;
+}
+.content-container {
+  font-size: 0;
+}
+.content-section {
+  display: inline-block;
+  vertical-align: top; /* 수직정렬 */
+  padding: 1em;
+  font-size: 1rem;  /* root em이다. rem 은 html에 기본 글자 크기로 설정을 한다는 것이다.*/
+
+}
+.content-section-a {
+  width: calc(30% - 2em);
+  background: yellow;
+}
+.content-section-b {
+  width: calc(70% - 2em);
+  background: pink;
+}
+.page-footer {
+  padding: 1em;
+  background: yellowgreen;
+}
+.global-menu-link {
+  display: block;
+  margin-bottom: 5px;
+  background: white;
+}

@@ -1,0 +1,44 @@
+.page-header {
+  display: block;
+  padding: 1em;
+  background: lightgray;
+}
+.content-container {
+  border: 10px solid red;
+}
+.content-container:after {
+  content: '';
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+.content-section {
+  /* float는 붕 띄우다. 라는 의미를 가지고 있다. */
+  float: left;
+  padding: 1em;
+  font-size: 1rem;  /* root em이다. rem 은 html에 기본 글자 크기로 설정을 한다는 것이다.*/
+
+}
+.content-section-a {
+  width: calc(30% - 2em);
+  background: yellow;
+}
+.content-section-b {
+  float: right;
+  width: calc(70% - 2em);
+  background: pink;
+}
+.page-footer {
+  /* clear: left; */
+  padding: 1em;
+  background: yellowgreen;
+}
+.global-menu-link {
+  display: block;
+  margin-bottom: 5px;
+  background: white;
+}
+/* .clear {
+  clear: left;
+} */
