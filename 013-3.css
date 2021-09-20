@@ -25,7 +25,7 @@
   background: yellow;
 }
 .content-section-b {
-  float: right;
+  float: left;
   width: calc(70% - 2em);
   background: pink;
 }

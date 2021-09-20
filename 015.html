@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  body {
+    height: 10000px;
+  }
+  div {
+    /* position: static; */
+    display: inline-block; /*inline-block이기 때문에 나란히 배치가 되었다.*/
+    width: 200px;
+    height: 200px;
+    opacity: 0.5; /* 연하게 하는 것 */
+  }
+  .a {background: red;}
+  .b {
+    position: relative; /*원래 자기 위치로 위치를 정할수 있다.*/
+    left: -60px;
+    right: 10px;
+    z-index: 100;
+    background: green;
+  }
+  .c {
+    position: absolute;
+    /*position: absolute;*/ /*기준점은 브라우저 윈이 0 이 기준이다. 그 기준으로 위치가 바뀐다.*/
+    left: 20px;
+    top: 50px;
+    background: blue;
+  }
+  .d {
+    position: fixed; /* 아무리 스크롤을 내려도 그 위치 고정이 된다. */
+    left: 30px;
+    top: 50px;
+    background: orange;
+  }
+  p {
+    position: sticky; /* 밑에 top: 20px;를 설정을 해주면 딱 그위치에 도착을 하면 그위치에서 고정이 된다. */
+    top: 20px;
+    z-index: 10; /* z-index는 위로 올라오는 순서를 정하는것이다. 숫자가 높을수록 위로 올라온다. 단 position: static;이것은 제외다. */
+    background: skyblue;
+  }
+  </style>
+</head>
+<body>
+  <div class="a"></div>
+  <div class="b"></div>
+  <div class="c"></div>
+  <div class="d"></div>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, sed, ea nulla porro laboriosam mollitia blanditiis, aut modi cumque beatae nostrum maiores voluptatibus labore distinctio aliquam ad delectus, magni excepturi.</p>
+</body>
+</html>

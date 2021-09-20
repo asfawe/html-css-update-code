@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .container {
+      display: flex;
+      /* flex-direction: row; */
+      /* justify-content: center;  축의 가로 방향 */
+      /* align-items: center; 축의 세로 방향 */
+      height: 80vh;
+      background: gray;
+    }
+    .item {
+      /* flex-grow: 1; /* 비율이 1이다. 근데 중요한건 이름부터 1 비율이다.*/
+      /* flex-basis: 0; /* 얘는 그냥 박스 자체 부터 1비율로 바꾸는 것이다. */
+      flex: 1; /*위에 있는걸 그냥 이렇게 적으면 된다.*/
+      /* flex-shrink는 줄어든다. 작아진다 이런가다. */
+      border: 3px solid black;
+      font-size: 3rem;
+      background: white;
+    }
+    /* .item:nth-child(1) {flex-grow: 1; }
+    .item:nth-child(2) {flex-grow: 5; }
+    .item:nth-child(3) {flex-grow: 2; }
+    .item:nth-child(4) {flex-grow: 3; }
+    .item:nth-child(5) {flex-grow: 1; } */
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item">AAA</div>
+    <div class="item">B</div>
+    <div class="item">CCCCC</div>
+    <div class="item">DDD</div>
+    <div class="item">E</div>
+  </div>
+</body>
+</html>
